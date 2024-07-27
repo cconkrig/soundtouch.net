@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <Nullable>enable</Nullable>
@@ -15,15 +14,12 @@ Features:
 * SoundStretch uses the SoundTouch.NET library routines for the audio procesing.
     </PackageDescription>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\SoundTouch.Net\SoundTouch.Net.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="NAudio" Version="1.9.0" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Assets\Strings.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -31,12 +27,10 @@ Features:
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Assets\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>

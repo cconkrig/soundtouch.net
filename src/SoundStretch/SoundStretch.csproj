@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <NoWarn>$(NoWarn);SA0001</NoWarn>
     <PackAsTool>true</PackAsTool>
@@ -23,14 +22,11 @@ SoundStretch features:
 * SoundStretch uses the SoundTouch.NET library routines for the audio procesing.
     </PackageDescription>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="NAudio.Core" Version="2.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\SoundTouch.Net.NAudioSupport.Core\SoundTouch.Net.NAudioSupport.Core.csproj" />
     <ProjectReference Include="..\SoundTouch.Net\SoundTouch.Net.csproj" />
   </ItemGroup>
-  
 </Project>
